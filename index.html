@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkyCast Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="background"></div>
+
+  <div class="weather-card">
+
+    <h1>☁️ SkyCast</h1>
+    <p class="subtitle">Modern Weather App</p>
+
+    <div class="search-box">
+      <input type="text" id="city" placeholder="Enter city name" />
+      <button onclick="getWeather()">Search</button>
+    </div>
+
+    <div id="weather" class="weather-info">
+      <img id="weather-icon" src="" alt="Weather Icon" />
+      <h2 id="temp"></h2>
+      <h3 id="city-name"></h3>
+      <p id="condition"></p>
+
+      <div class="details">
+        <div class="detail-box">
+          <span>💧</span>
+          <p id="humidity"></p>
+          <small>Humidity</small>
+        </div>
+
+        <div class="detail-box">
+          <span>🌬️</span>
+          <p id="wind"></p>
+          <small>Wind</small>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
